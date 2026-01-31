@@ -19,25 +19,30 @@ An AI-powered interview coaching tool designed to help candidates prepare for th
 ## Installation
 
 1. **Clone or navigate to the project directory**:
+
    ```bash
    cd ../GrayMatterSystemsInterviewPrep
    ```
 
 2. **Create and activate the virtual environment**:
+
    ```bash
    python3 -m venv venv
    source venv/bin/activate
    ```
 
 3. **Install dependencies**:
+
    ```bash
    pip install -r requirements.txt
    ```
 
    **Note for macOS users**: If you encounter issues installing `pyaudio`, run:
+
    ```bash
    CFLAGS="-I/opt/homebrew/include" LDFLAGS="-L/opt/homebrew/lib" pip install pyaudio
    ```
+
    (Requires `portaudio` installed via Homebrew: `brew install portaudio`)
 
 ## Setup
@@ -45,11 +50,13 @@ An AI-powered interview coaching tool designed to help candidates prepare for th
 ## Usage
 
 1. **Activate the virtual environment**:
+
    ```bash
    source venv/bin/activate
    ```
 
 2. **Run the Streamlit app**:
+
    ```bash
    streamlit run interview_coach.py
    ```
@@ -81,6 +88,7 @@ GrayMatterSystemsInterviewPrep/
 ## API Keys & Authentication
 
 This application uses the OpenAI API. You'll need:
+
 1. An OpenAI account (https://openai.com)
 2. An API key from your account settings
 3. Set the `OPENAI_API_KEY` environment variable
@@ -88,19 +96,23 @@ This application uses the OpenAI API. You'll need:
 ## Troubleshooting
 
 ### "No module named 'speech_recognition'"
+
 Ensure all dependencies are installed:
+
 ```bash
 source venv/bin/activate
 pip install -r requirements.txt
 ```
 
 ### PyAudio Installation Issues (macOS)
+
 ```bash
 brew install portaudio
 CFLAGS="-I/opt/homebrew/include" LDFLAGS="-L/opt/homebrew/lib" pip install pyaudio
 ```
 
 ### Microphone Not Working
+
 - Ensure your microphone is properly connected
 - Check system audio settings allow microphone access
 - Try increasing the timeout in `recognize_speech()` for slower systems
@@ -118,6 +130,7 @@ The coach provides feedback organized into three sections:
 ### GrayMatter Systems Context
 
 The coach is specialized for the Engineer I role with knowledge of:
+
 - Company values: Accountability, Integrity, Respect, Innovation, Teamwork
 - Program details: 2-year mentorship, hands-on field work, industrial automation
 - Key traits: "Thinking and Doing" mentality, owning mistakes, learning agility
@@ -125,6 +138,7 @@ The coach is specialized for the Engineer I role with knowledge of:
 ## Contributing
 
 Suggestions for improvements are welcome! Consider:
+
 - Adding more question templates for different interview scenarios
 - Expanding company context for other roles
 - Improving speech recognition accuracy
@@ -137,6 +151,7 @@ This project is for educational and interview preparation purposes.
 ## Support
 
 For issues or questions about the application, refer to the troubleshooting section above or check the official documentation for:
+
 - [Streamlit](https://docs.streamlit.io/)
 - [OpenAI API](https://platform.openai.com/docs/)
 - [SpeechRecognition](https://github.com/Uberi/speech_recognition#readme)
