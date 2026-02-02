@@ -132,11 +132,19 @@ with tab2:
     st.caption("Situation -> Task -> Action -> Result")
     
     q2 = st.selectbox("Select a Scenario:", [
-        "Tell me about a time you made a mistake that affected a client or project. How did you fix it?",
-        "Describe a time you had to deal with a difficult team member who wasn't pulling their weight.",
-        "Tell me about a time you were given a task with very vague instructions. What did you do?",
-        "Describe a situation where you had to learn a complex technical tool overnight.",
-        "Tell me about a time you disagreed with a supervisor or professor. How did you handle it?"
+        "Give me an example of a time when you had to deal with a difficult co-worker or fellow student on a project. How did you handle the situation? What were the outcomes?",
+        "Tell me about a time when you had to persuade someone to see your point of view. What tactics did you use? What were the outcomes? What did you learn?",
+        "Tell me about a time when you had a list of things to do and your supervisor/instructor came to you and said “I need this project/assignment completed by 5 o’clock”. How did you handle the situation?",
+        "Tell me about a time you were involved in a project with a group.",
+        "Give me an example of a time when you had to supervise someone.",
+        "Tell me about how you keep yourself organized so to meet deadlines or goals.",
+        "Give me an example of a time where you failed to meet a goal. What did you fail to do? What were the consequences? What was the outcome?",
+        "Give me an example of a time when you used creativity to complete a project, work with someone else, or develop a new idea.",
+        "Describe a time when you were a team leader. Who did the team consist of, and what did you do to help your team be successful?",
+        "Describe a time when you were assigned a task but were provided little direction for how to complete the task. What steps did you take to complete the task? What was the outcome?",
+        "Describe a time when a co-worker or student approached you and criticized your work. How did you handle the situation? What was the outcome?",
+        "Provide me with an example of a time when you had to motivate others. What were the outcomes?",
+        "Tell me about a time when you had to make a difficult decision that affected those with whom you worked. What was the outcome?"
     ], key="q2_select")
     
     st.markdown(f"**Question:** *{q2}*")
